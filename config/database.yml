@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: brianhandev_development
   pool: 5
-  password:
+  timeout: 5000
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -47,11 +47,11 @@ test:
   encoding: unicode
   database: brianhandev_test
   pool: 5
-  password:
+  timeout: 5000
 
 production:
   adapter: postgresql
   encoding: unicode
   database: brianhandev_production
   pool: 5
-  password:
+  timeout: 5000
